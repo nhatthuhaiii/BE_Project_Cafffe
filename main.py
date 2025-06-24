@@ -7,6 +7,7 @@ from db import get_db,engine
 from sqlalchemy.orm import Session
 app = FastAPI()
 
+create_table()
 
 #1
 @app.get("/caffe/",response_model=list[schemas.Caffe])
